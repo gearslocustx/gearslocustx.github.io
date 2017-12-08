@@ -1,0 +1,42 @@
+{
+  "title": "Modelo_fisico",
+  "author": "Ulises Abraham Prisco Perez (Programador), María Auxilio Medina Nieto (Asesor), Jorge de la Calleja Mora, Antonio Benitez Ruiz, Rebeca Rodriguez Huesca (Asesor), Araceli Ortiz Carranco",
+  "school": "Universidad Politécnica de Puebla",
+  "date": "15/11/17",
+  "langCodes": [
+    "es"
+  ],
+  "languages": {
+    "es": "español"
+  },
+  "areas": {
+    "es": "Base de Datos"
+  },
+  "meta_langs": [
+    "es"
+  ],
+  "mainFile": "modelo_fisico.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "app_icon_ibmdb2.png",
+    "favicon.ico",
+    "firebird.png",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "interbase.png",
+    "mariadb_usa_inc.png",
+    "modelo_fisico.jclic",
+    "modelo_fisico.jclic.js",
+    "mysql.png",
+    "oracle.png",
+    "post_sql.png",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "sql_serv.png",
+    "sysbase.png"
+  ]
+}
