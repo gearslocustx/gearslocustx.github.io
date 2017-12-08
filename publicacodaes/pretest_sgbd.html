@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Pre-test SGBD </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.2 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="11_introduccin.html" class="daddy">1.1 Introducción</a>
+   <ul class="other-section">
+      <li><a href="111_diferencia_entre_datos_e_informacin.html" class="no-ch">1.1.1 Diferencia entre datos e información</a></li>
+      <li><a href="112_definicin_de_bases_de_datos.html" class="no-ch">1.1.2 Definición de bases de datos</a></li>
+      <li><a href="113_contextos_de_uso_para_bases_de_datos.html" class="no-ch">1.1.3 Contextos de uso para bases de datos</a></li>
+      <li><a href="114_tipos_de_usuario_de_bases_de_datos.html" class="no-ch">1.1.4 Tipos de usuario de bases de datos</a></li>
+   </ul>
+   </li>
+   <li><a href="12_modelo_de_datos.html" class="daddy">1.2 Modelo de datos</a>
+   <ul class="other-section">
+      <li><a href="122_modelo_lgico.html" class="no-ch">1.2.2 Modelo lógico</a></li>
+      <li><a href="123_modelo_conceptual.html" class="no-ch">1.2.3 Modelo conceptual</a></li>
+      <li><a href="121_modelo_fsico.html" class="daddy">1.2.1 Modelo físico</a>
+      <ul class="other-section">
+         <li><a href="actividad_de_aprendizaje_1__modelo_fsico_complete.html" class="no-ch">Actividad de Aprendizaje 1 - Modelo Físico (Complete)</a></li>
+         <li><a href="actividad_de_aprendizaje_2__hotspots.html" class="no-ch">Actividad de Aprendizaje 2 - Hotspots</a></li>
+         <li><a href="actividad_de_aprendizaje_3__arrastra_y_suelta.html" class="no-ch">Actividad de Aprendizaje 3 - Arrastra y suelta</a></li>
+         <li><a href="actividad_de_aprendizaje_4__dbms_memorama.html" class="no-ch">Actividad de Aprendizaje 4 - DBMS (Memorama)</a></li>
+         <li><a href="actividad_de_evaluacin.html" class="no-ch">Actividad de Evaluación</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="13_sistema_gestor_de_base_de_datos.html" class="current-page-parent daddy">1.3 Sistema gestor de base de datos</a>
+   <ul>
+      <li id="active"><a href="pretest_sgbd.html" class="active no-ch">Pre-test SGBD</a></li>
+      <li><a href="131_gestor_de_almacenamiento.html" class="daddy">1.3.1 Gestor de almacenamiento</a>
+      <ul class="other-section">
+         <li><a href="actividad_de_aprendizaje_1__actividad_desplegable.html" class="no-ch">Actividad de Aprendizaje 1 - Actividad desplegable</a></li>
+         <li><a href="actividad_de_aprendizaje_2__arrastra_y_suelta.html" class="no-ch">Actividad de Aprendizaje 2 - Arrastra y suelta</a></li>
+         <li><a href="actividad_de_aprendizaje_3__sopa_de_letras.html" class="no-ch">Actividad de Aprendizaje 3 - Sopa de letras</a></li>
+         <li><a href="actividad_de_aprendizaje_4__crucigrama.html" class="no-ch">Actividad de Aprendizaje 4 - Crucigrama</a></li>
+         <li><a href="actividad_de_evaluacin__cuestionario_scorm.html" class="no-ch">Actividad de Evaluación - Cuestionario SCORM</a></li>
+      </ul>
+      </li>
+      <li><a href="132_procesador_de_consultas.html" class="no-ch">1.3.2 Procesador de consultas</a></li>
+   </ul>
+   </li>
+   <li><a href="14_desarrollo_de_software_que_emplea_bases_de_datos.html" class="daddy">1.4 Desarrollo de software que emplea bases de datos</a>
+   <ul class="other-section">
+      <li><a href="141_arquitectura_de_dos_capas.html" class="no-ch">1.4.1 Arquitectura de dos capas</a></li>
+      <li><a href="142_arquitectura_de_tres_capas.html" class="no-ch">1.4.2 Arquitectura de tres capas</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="13_sistema_gestor_de_base_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="131_gestor_de_almacenamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Pre-test SGBD</h1></header>
+<article class="iDevice_wrapper QuizTestIdevice em_iDevice" id="id49">
+<script type="text/javascript">/*<![CDATA[*/
+var numQuestions = 9;
+var rawScore = 0;
+var actualScore = 0;
+var question0;
+var question1;
+var question2;
+var question3;
+var question4;
+var question5;
+var question6;
+var question7;
+var question8;
+var key0 = 2;
+var key1 = 0;
+var key2 = 1;
+var key3 = 0;
+var key4 = 1;
+var key5 = 2;
+var key6 = 0;
+var key7 = 0;
+var key8 = 1;
+function getAnswer()
+        {
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key0b49[i].checked)
+               {
+                  question0 = document.getElementById("quizForm49").key0b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key1b49[i].checked)
+               {
+                  question1 = document.getElementById("quizForm49").key1b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key2b49[i].checked)
+               {
+                  question2 = document.getElementById("quizForm49").key2b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key3b49[i].checked)
+               {
+                  question3 = document.getElementById("quizForm49").key3b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key4b49[i].checked)
+               {
+                  question4 = document.getElementById("quizForm49").key4b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key5b49[i].checked)
+               {
+                  question5 = document.getElementById("quizForm49").key5b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key6b49[i].checked)
+               {
+                  question6 = document.getElementById("quizForm49").key6b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key7b49[i].checked)
+               {
+                  question7 = document.getElementById("quizForm49").key7b49[i].value;
+                  break;
+               }
+            }
+            
+            for (var i=0; i < 3; i++)
+            {
+               if (document.getElementById("quizForm49").key8b49[i].checked)
+               {
+                  question8 = document.getElementById("quizForm49").key8b49[i].value;
+                  break;
+               }
+            }
+            }
+        function calcRawScore(){
+
+            if (question0 == key0)
+            {
+               rawScore++;
+            }
+            if (question1 == key1)
+            {
+               rawScore++;
+            }
+            if (question2 == key2)
+            {
+               rawScore++;
+            }
+            if (question3 == key3)
+            {
+               rawScore++;
+            }
+            if (question4 == key4)
+            {
+               rawScore++;
+            }
+            if (question5 == key5)
+            {
+               rawScore++;
+            }
+            if (question6 == key6)
+            {
+               rawScore++;
+            }
+            if (question7 == key7)
+            {
+               rawScore++;
+            }
+            if (question8 == key8)
+            {
+               rawScore++;
+            }
+        
+        }
+        
+        function calcScore2()
+        {
+            getAnswer();
+     
+            calcRawScore();
+            actualScore =  Math.round(rawScore / numQuestions * 100);
+            var id = "49";
+            document.getElementById("quizForm"+id).submitB.disabled = true;
+            var s = document.getElementById("quizFormScore"+id);
+                        var msg_str ="Su puntuación es %d%%";            msg_str = msg_str.replace("%d",actualScore).replace("%%","%");            if (s) { s.innerHTML = "<div class='feedback'><p>"+msg_str+"</p></div>"; } else { alert(msg_str); }
+           
+        }
+    /*]]>*/</script>
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Cuestionario SCORM</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<form name="quizForm49" id="quizForm49" action="javascript:calcScore2();">
+<input type="hidden" name="passrate" id="passrate-49" value="50" />
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion0b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Qué significan las siglas SGBD?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b491" class="sr-av"><a href="#answer-key0b491">Opción 1</a></label><input type="radio" name="key0b49" id="key0b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b491">
+<div id="taoptionAnswer0q0b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Sistema Generador de BDs.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b492" class="sr-av"><a href="#answer-key0b492">Opción 2</a></label><input type="radio" name="key0b49" id="key0b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b492">
+<div id="taoptionAnswer1q0b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Servicio Generador de BDs.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key0b493" class="sr-av"><a href="#answer-key0b493">Opción 3</a></label><input type="radio" name="key0b49" id="key0b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key0b493">
+<div id="taoptionAnswer2q0b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Sistema Gestor de BDs.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion1b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Cuál es el objetivo principal para un SGBD?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b491" class="sr-av"><a href="#answer-key1b491">Opción 1</a></label><input type="radio" name="key1b49" id="key1b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b491">
+<div id="taoptionAnswer0q1b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Proporcionar mecanismos para almacenamiento y recuperación de información de una BD de manera controlada.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b492" class="sr-av"><a href="#answer-key1b492">Opción 2</a></label><input type="radio" name="key1b49" id="key1b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b492">
+<div id="taoptionAnswer1q1b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Eliminar los datos repetidos u obsoletos en la BD.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key1b493" class="sr-av"><a href="#answer-key1b493">Opción 3</a></label><input type="radio" name="key1b49" id="key1b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key1b493">
+<div id="taoptionAnswer2q1b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Generar una llave de acceso para cada usuario de la BD.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion2b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Qué inconvenientes evita el uso de un SGBD?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b491" class="sr-av"><a href="#answer-key2b491">Opción 1</a></label><input type="radio" name="key2b49" id="key2b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b491">
+<div id="taoptionAnswer0q2b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Abstracción a nivel físico, lógico y de vistas.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b492" class="sr-av"><a href="#answer-key2b492">Opción 2</a></label><input type="radio" name="key2b49" id="key2b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b492">
+<div id="taoptionAnswer1q2b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Redundancia e inconsistencia, problemas de seguridad y aislamiento de datos.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key2b493" class="sr-av"><a href="#answer-key2b493">Opción 3</a></label><input type="radio" name="key2b49" id="key2b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key2b493">
+<div id="taoptionAnswer2q2b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Modelado incorrecto de las relaciones y/o relaciones con una sola cardinalidad.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion3b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Cuál de estos enunciados representa una ventaja de usar un SGBD?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b491" class="sr-av"><a href="#answer-key3b491">Opción 1</a></label><input type="radio" name="key3b49" id="key3b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b491">
+<div id="taoptionAnswer0q3b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Facilidad de manejo de grandes volúmenes de información.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b492" class="sr-av"><a href="#answer-key3b492">Opción 2</a></label><input type="radio" name="key3b49" id="key3b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b492">
+<div id="taoptionAnswer1q3b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">No es necesario un experto para administrar la BD.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key3b493" class="sr-av"><a href="#answer-key3b493">Opción 3</a></label><input type="radio" name="key3b49" id="key3b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key3b493">
+<div id="taoptionAnswer2q3b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Cada usuario puede decidir a qué información tiene acceso.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion4b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Cuáles de estos elementos forman parte de un SGBD?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b491" class="sr-av"><a href="#answer-key4b491">Opción 1</a></label><input type="radio" name="key4b49" id="key4b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b491">
+<div id="taoptionAnswer0q4b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Tuplas, atributos y dominio.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b492" class="sr-av"><a href="#answer-key4b492">Opción 2</a></label><input type="radio" name="key4b49" id="key4b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b492">
+<div id="taoptionAnswer1q4b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Gestor de archivos, manejador de BD y procesador de consultas. </span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key4b493" class="sr-av"><a href="#answer-key4b493">Opción 3</a></label><input type="radio" name="key4b49" id="key4b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key4b493">
+<div id="taoptionAnswer2q4b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Interfaces de usuario, administradores de BDs y compilador.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion5b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Qué son los programas de aplicación?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b491" class="sr-av"><a href="#answer-key5b491">Opción 1</a></label><input type="radio" name="key5b49" id="key5b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b491">
+<div id="taoptionAnswer0q5b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Programas que establecen una conexión con una BD.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b492" class="sr-av"><a href="#answer-key5b492">Opción 2</a></label><input type="radio" name="key5b49" id="key5b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b492">
+<div id="taoptionAnswer1q5b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Programas que ejecutan el diccionario de datos.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key5b493" class="sr-av"><a href="#answer-key5b493">Opción 3</a></label><input type="radio" name="key5b49" id="key5b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key5b493">
+<div id="taoptionAnswer2q5b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Programas que administran los archivos de datos.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion6b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿A qué se refiere la expresión inconsistencia de datos?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key6b491" class="sr-av"><a href="#answer-key6b491">Opción 1</a></label><input type="radio" name="key6b49" id="key6b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key6b491">
+<div id="taoptionAnswer0q6b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Mismos datos con valores diferentes en la misma BD.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key6b492" class="sr-av"><a href="#answer-key6b492">Opción 2</a></label><input type="radio" name="key6b49" id="key6b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key6b492">
+<div id="taoptionAnswer1q6b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Actualización simultánea de los datos en toda la BD.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key6b493" class="sr-av"><a href="#answer-key6b493">Opción 3</a></label><input type="radio" name="key6b49" id="key6b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key6b493">
+<div id="taoptionAnswer2q6b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">No todos los usuarios deben tener acceso a la misma información.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion7b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Cuáles de estas tareas realiza un administrador de BDs?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key7b491" class="sr-av"><a href="#answer-key7b491">Opción 1</a></label><input type="radio" name="key7b49" id="key7b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key7b491">
+<div id="taoptionAnswer0q7b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Interactúa con el sistema a través de los programas de aplicación.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key7b492" class="sr-av"><a href="#answer-key7b492">Opción 2</a></label><input type="radio" name="key7b49" id="key7b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key7b492">
+<div id="taoptionAnswer1q7b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Desarrolla las interfaces para los usuarios.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key7b493" class="sr-av"><a href="#answer-key7b493">Opción 3</a></label><input type="radio" name="key7b49" id="key7b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key7b493">
+<div id="taoptionAnswer2q7b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Da mantenimiento a la BD.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="question">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion8b49" class="block iDevice_content">
+<p><span style="font-size: 18pt;">¿Qué son los metadatos?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key8b491" class="sr-av"><a href="#answer-key8b491">Opción 1</a></label><input type="radio" name="key8b49" id="key8b491" value="0" />
+</p>
+<div class="iDevice_answer-content" id="answer-key8b491">
+<div id="taoptionAnswer0q8b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Son lenguajes que permiten a los usuarios acceder o manipular los datos de una BD.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key8b492" class="sr-av"><a href="#answer-key8b492">Opción 2</a></label><input type="radio" name="key8b49" id="key8b492" value="1" />
+</p>
+<div class="iDevice_answer-content" id="answer-key8b492">
+<div id="taoptionAnswer1q8b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Son datos acerca de los datos.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="key8b493" class="sr-av"><a href="#answer-key8b493">Opción 3</a></label><input type="radio" name="key8b49" id="key8b493" value="2" />
+</p>
+<div class="iDevice_answer-content" id="answer-key8b493">
+<div id="taoptionAnswer2q8b49" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Es la manipulación de datos que permite el borrado de información en una BD.</span></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<div class="block iDevice_buttons">
+<p><input type="submit" name="submitB" value="ENVIAR RESPUESTAS" /> <span class="js-hidden js-warning">Habilitar JavaScript</span></p>
+</div>
+<div id="quizFormScore49"></div>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper MultiSelectIdevice em_iDevice" id="id50">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Pregunta de Selección Múltiple</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<div id="actitity-50_108">
+<form name="multi-select-form-50_108" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion50_108" class="block question iDevice_content">
+<p><span style="font-size: 18pt;">¿Cuáles de los nombres siguientes pertenecen a un SGBD?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_1080" class="sr-av"><a href="#answer-50_111">Opción 1</a></label><input type="checkbox" id="op50_1080" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_111"><div id="taans50_111" class="block iDevice_content">
+<p><span style="font-size: 14pt;">MySQL</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_1080" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_1081" class="sr-av"><a href="#answer-50_200">Opción 2</a></label><input type="checkbox" id="op50_1081" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_200"><div id="taans50_200" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Oracle</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_1081" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_1082" class="sr-av"><a href="#answer-50_202">Opción 3</a></label><input type="checkbox" id="op50_1082" value="False" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_202"><div id="taans50_202" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Google</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_1082" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_1083" class="sr-av"><a href="#answer-50_204">Opción 4</a></label><input type="checkbox" id="op50_1083" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_204"><div id="taans50_204" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Paradox</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_1083" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_1084" class="sr-av"><a href="#answer-50_206">Opción 5</a></label><input type="checkbox" id="op50_1084" value="False" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_206"><div id="taans50_206" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Facebook</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_1084" style="display:none"></section>
+</section>
+</section>
+<div class="block iDevice_buttons feedback-button js-required">
+<p>
+<input type="button" name="submitSelect" class="feedbackbutton" value="Mostrar retroalimentación" onclick="$exe.showFeedback(this,5,'50_108')"/> 
+</p>
+</div>
+<section id="f50_108" class="js-hidden js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-50_111" class="right">Correcto</a></li>
+<li><a href="#answer-50_200" class="right">Correcto</a></li>
+<li><a href="#answer-50_202" class="wrong">Incorrecto</a></li>
+<li><a href="#answer-50_204" class="right">Correcto</a></li>
+<li><a href="#answer-50_206" class="wrong">Incorrecto</a></li>
+</ol>
+</section>
+</div>
+</section>
+<section class="question">
+<div id="actitity-50_208">
+<form name="multi-select-form-50_208" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion50_208" class="block question iDevice_content">
+<p><span style="font-size: 18pt;">¿Cuáles palabras representan un nivel de abstracción de datos?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2080" class="sr-av"><a href="#answer-50_211">Opción 1</a></label><input type="checkbox" id="op50_2080" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_211"><div id="taans50_211" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Físico</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2080" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2081" class="sr-av"><a href="#answer-50_213">Opción 2</a></label><input type="checkbox" id="op50_2081" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_213"><div id="taans50_213" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Lógico</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2081" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2082" class="sr-av"><a href="#answer-50_215">Opción 3</a></label><input type="checkbox" id="op50_2082" value="False" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_215"><div id="taans50_215" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Químico</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2082" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2083" class="sr-av"><a href="#answer-50_217">Opción 4</a></label><input type="checkbox" id="op50_2083" value="False" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_217"><div id="taans50_217" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Híbrido</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2083" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2084" class="sr-av"><a href="#answer-50_219">Opción 5</a></label><input type="checkbox" id="op50_2084" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_219"><div id="taans50_219" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Conceptual</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2084" style="display:none"></section>
+</section>
+</section>
+<div class="block iDevice_buttons feedback-button js-required">
+<p>
+<input type="button" name="submitSelect" class="feedbackbutton" value="Mostrar retroalimentación" onclick="$exe.showFeedback(this,5,'50_208')"/> 
+</p>
+</div>
+<section id="f50_208" class="js-hidden js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-50_211" class="right">Correcto</a></li>
+<li><a href="#answer-50_213" class="right">Correcto</a></li>
+<li><a href="#answer-50_215" class="wrong">Incorrecto</a></li>
+<li><a href="#answer-50_217" class="wrong">Incorrecto</a></li>
+<li><a href="#answer-50_219" class="right">Correcto</a></li>
+</ol>
+</section>
+</div>
+</section>
+<section class="question">
+<div id="actitity-50_221">
+<form name="multi-select-form-50_221" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion50_221" class="block question iDevice_content">
+<p><span style="font-size: 18pt;">¿En comparación con un sistema de archivos, ¿cuáles de las siguientes opciones representan ventajas de una BD? </span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2210" class="sr-av"><a href="#answer-50_224">Opción 1</a></label><input type="checkbox" id="op50_2210" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_224"><div id="taans50_224" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Redundancia de datos</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2210" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2211" class="sr-av"><a href="#answer-50_226">Opción 2</a></label><input type="checkbox" id="op50_2211" value="False" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_226"><div id="taans50_226" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Compatibilidad </span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2211" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2212" class="sr-av"><a href="#answer-50_228">Opción 3</a></label><input type="checkbox" id="op50_2212" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_228"><div id="taans50_228" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Seguridad</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2212" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2213" class="sr-av"><a href="#answer-50_230">Opción 4</a></label><input type="checkbox" id="op50_2213" value="True" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_230"><div id="taans50_230" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Integridad</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2213" style="display:none"></section>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="op50_2214" class="sr-av"><a href="#answer-50_232">Opción 5</a></label><input type="checkbox" id="op50_2214" value="False" />
+</p>
+<div class="iDevice_answer-content" id="answer-50_232"><div id="taans50_232" class="block iDevice_content">
+<p><span style="font-size: 14pt;">Acceso restringido a los datos</span></p>
+</div>
+</div>
+<section class="iDevice_answer-feedback feedback" id="feedback-50_2214" style="display:none"></section>
+</section>
+</section>
+<div class="block iDevice_buttons feedback-button js-required">
+<p>
+<input type="button" name="submitSelect" class="feedbackbutton" value="Mostrar retroalimentación" onclick="$exe.showFeedback(this,5,'50_221')"/> 
+</p>
+</div>
+<section id="f50_221" class="js-hidden js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-50_224" class="right">Correcto</a></li>
+<li><a href="#answer-50_226" class="wrong">Incorrecto</a></li>
+<li><a href="#answer-50_228" class="right">Correcto</a></li>
+<li><a href="#answer-50_230" class="right">Correcto</a></li>
+<li><a href="#answer-50_232" class="wrong">Incorrecto</a></li>
+</ol>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="13_sistema_gestor_de_base_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="131_gestor_de_almacenamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
