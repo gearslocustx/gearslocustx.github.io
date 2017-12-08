@@ -1,0 +1,22 @@
+{
+  "title": "Sopa_letras_gestor",
+  "date": "20/11/17",
+  "meta_langs": [
+    "es"
+  ],
+  "mainFile": "sopa_letras_gestor.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "favicon.ico",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json",
+    "sopa_letras_gestor.jclic",
+    "sopa_letras_gestor.jclic.js"
+  ]
+}
