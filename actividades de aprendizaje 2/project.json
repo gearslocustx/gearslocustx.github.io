@@ -1,0 +1,36 @@
+{
+  "title": "Gestor_almacenamiento",
+  "author": "Ulises Abraham Prisco Perez (Programador), Maria Auxilio Medina Nieto (Asesor), Jorge de la Calleja Mora, Antonio Benitez Ruiz, Rebeca Rodriguez Huesca (Asesor), Araceli Ortiz Carranco",
+  "school": "Universidad Politécnica de Puebla (Juan C. Bonilla)",
+  "date": "14/11/17",
+  "langCodes": [
+    "es"
+  ],
+  "languages": {
+    "es": "español"
+  },
+  "areas": {
+    "es": "Base de Datos"
+  },
+  "levels": {
+    "es": "Basico"
+  },
+  "meta_langs": [
+    "es"
+  ],
+  "mainFile": "gestor_almacenamiento.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "files": [
+    "favicon.ico",
+    "gestor_almacenamiento.jclic",
+    "gestor_almacenamiento.jclic.js",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
